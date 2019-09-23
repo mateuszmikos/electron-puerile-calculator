@@ -1,0 +1,23 @@
+{
+  "name": "calculator",
+  "productName": "Puerile Calculator",
+  "version": "1.0.0",
+  "description": "Puerile Calculator - My First Electron App",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=true --out=release-builds",
+    "package-win": "electron-packager . calculator --overwrite --asar --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds --version-string.ProductName=\"Puerile Calculator\"",
+    "package-linux": "electron-packager . calculator --overwrite --asar=true --platform=linux --arch=x64 --icon=assets/icons/png/icon.png --prune=true --out=release-builds"
+  },
+  "keywords": [],
+  "author": "Mateusz Mikos",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^6.0.10",
+    "electron-packager": "^14.0.6"
+  },
+  "dependencies": {
+    "jquery": "^3.4.1"
+  }
+}
